@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Flower<span class="highlight">Shop</span></h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner section -->
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Bring Nature Home</h2>
+            <p>Fresh flowers and plants that brighten your day</p>
+            <button class="primary-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- our plant section -->
+    <section class="plant">
+        <h2 class="plant-title noto-serif-font"><span class="colorfull">Our </span>Plants</h2>
+        <div class="plant-container">
+            <div class="card text-center flex flex-col">
+                <img class="plant-img" src="images/plant1.png" alt="Plant">
+                <h4 class="card-name">Lily Blossom</h4>
+                <p class="card-price">$14.99</p>
+            </div>
+            <div class="card text-center flex flex-col">
+                <img class="plant-img" src="images/plant2.png" alt="Plant">
+                <h4 class="card-name">Sunshine Daisy</h4>
+                <p class="card-price">$19.99</p>
+            </div>
+            <div class="card text-center flex flex-col">
+                <img class="plant-img" src="images/plant3.png" alt="Plant">
+                <h4 class="card-name">Rose Elegance</h4>
+                <p class="card-price">$24.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- discount section -->
+    <section class="discount">
+        <div class="discount-sixty">
+            <h3>60% Off</h3>
+            <p>Get fresh deals on selected bouquets</p>
+        </div>
+        <div class="discount-thirty">
+            <h3>30% Off</h3>
+            <p>Seasonal plant bundles available</p>
+        </div>
+    </section>
+
+    <!-- join section -->
+    <section class="mx-w-j">
+        <div class="join flex">
+            <div class="join-text">
+                <h3>Join Our Newsletter</h3>
+                <p>Get updates on new plants and offers</p>
+            </div>
+            <form class="join-form">
+                <input type="email" class="join-input" placeholder="Write email" required>
+                <input type="submit" value="Subscribe" class="join-btn primary-btn">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<style>
+/* header styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header {
+    background-color: #fdf2f8;
+    padding: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo h1 {
+    font-family: 'Noto Serif', serif;
+}
+
+.highlight {
+    color: hotpink;
+}
+
+.banner {
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.primary-btn {
+    background-color: hotpink;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.plant-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+}
+
+.colorfull {
+    color: hotpink;
+}
+
+.plant-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plant-img {
+    width: 100%;
+    height: auto;
+}
+
+.discount {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.discount-sixty,
+.discount-thirty {
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 200px;
+    background-color: #ffe4e1;
+    text-align: center;
+}
+
+.mx-w-j {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+}
+
+.join {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.join-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.join-btn {
+    margin-left: 10px;
+}
+
+.inter-font {
+    font-family: 'Inter', sans-serif;
+}
+
+.noto-serif-font {
+    font-family: 'Noto Serif', serif;
+}
+</style>
