@@ -41,6 +41,7 @@
     max-width: 1140px;
     margin: 0px auto;
 }
+
 body {
     overflow-x: hidden;
 }
@@ -53,6 +54,7 @@ body {
     background-color: #E95A08;
     color: #FFFFFF;
 }
+
 .primary-btn:hover {
     background-color: #a74706;
 }
@@ -166,6 +168,7 @@ section {
     font-weight: bold;
     color: #111111;
 }
+
 .card img {
     width: 100%;
     height: 322px;
@@ -190,6 +193,7 @@ section {
     margin-top: 50px;
 }
 
+
 /* lover styles */
 .lover {
     margin-top: 200px;
@@ -199,7 +203,7 @@ section {
 .lover-img-container {
     position: relative;
     max-width: 100%;
-    
+
 }
 
 .lover-banner {
@@ -221,6 +225,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -406,6 +411,7 @@ section {
 .join-section {
     width: 100%;
 }
+
 .join {
     width: 100vw;
     max-width: 100vw;
@@ -524,7 +530,7 @@ footer {
 @media screen and (max-width:576px) {
     .navbar {
         margin: 0px;
-        margin-bottom: 250px; 
+        margin-bottom: 250px;
         width: 100%;
     }
 
@@ -532,9 +538,7 @@ footer {
     .shop {
         display: none;
     }
-    /* .nav-lists {
-        gap: 0px;
-    } */
+
 
     .fresh {
         flex-direction: column-reverse;
@@ -548,10 +552,12 @@ footer {
         gap: 16px;
         padding: 10px;
     }
+
     .card img {
         height: 250px;
         object-fit: cover;
     }
+
     .card {
         height: 400px;
     }
@@ -561,6 +567,7 @@ footer {
         gap: 30px;
         padding: 10px;
     }
+
     .lover-banner {
         width: 100%;
         height: 500px;
@@ -586,8 +593,12 @@ footer {
     .discount-thirty,
     .discount-five {
         margin-left: 0;
-        height: 180px;
+        height: 200px;
         min-height: 180px;
+        border-radius: 8px;
+    }
+
+    .discount-five::before {
         border-radius: 8px;
     }
 
@@ -603,25 +614,29 @@ footer {
         height: 320px;
         margin-top: 50px;
     }
+
     .join-title {
         font-size: 2rem;
         margin-bottom: 18px;
         text-align: center;
     }
+
     .join-form {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         width: 100%;
         gap: 0;
     }
+
     .join-input,
     .join-btn {
         width: 90vw;
         max-width: 320px;
-        margin: 0 auto;      
-        display: block;      
+        margin: 0 auto;
+        display: block;
         border-radius: 6px;
     }
+
     .join-btn {
         margin-top: 10px;
     }
@@ -632,18 +647,22 @@ footer {
         padding: 30px 10px;
         gap: 20px;
     }
+
     .footer-container {
         flex-direction: column;
         gap: 20px;
         align-items: center;
     }
+
     .footer-list {
         align-items: center;
         gap: 16px;
     }
+
     .social-list {
         justify-content: center;
     }
+
     .footer-description {
         text-align: center;
     }
