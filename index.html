@@ -62,49 +62,49 @@
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Lily Blossom</h5>
                         <h4 class="card-price">$29 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Tuberose Blossom</h5>
                         <h4 class="card-price">$27 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Hibiscus Blossom</h5>
                         <h4 class="card-price">$23 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Jasmine Blossom</h5>
                         <h4 class="card-price">$21 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Marigold Blossom</h5>
                         <h4 class="card-price">$25 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Arabian Jasmine Blossom</h5>
                         <h4 class="card-price">$22 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Royal Poinciana Blossom</h5>
                         <h4 class="card-price">$25 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
                 <div class="card text-center flex justify-between">
                     <img src="assets/sample-flower-image.png" alt="" class="card-img">
                     <h4 class="card-name">Crape Poinciana Blossom</h5>
                         <h4 class="card-price">$20.5 USD</h5>
-                            <button class="card-btn primary-btn">ADD TO CART</button>
+                            <button onclick="showAlert()" class="card-btn primary-btn">ADD TO CART</button>
                 </div>
             </div>
         </section>
@@ -162,11 +162,12 @@
                     </h2>
                 </div>
                 <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" class="join-input" placeholder="Write email">
-                    <input type="button" value="Subscribe" class="join-btn primary-btn ">
+                    <form>
+                        <label for="email"></label>
+                        <input type="email" id="email" class="join-input" placeholder="Write email">
+                        <input onclick="Subscribe()" type="button" value="Subscribe" class="join-btn primary-btn ">
+                    </form>
                 </div>
-            </div>
         </section>
     </main>
     <footer class="mx-w">
@@ -205,6 +206,22 @@
         </div>
 
     </footer>
+    <script>
+
+        function showAlert() {
+            alert("Flower Added to Cart");
+        }
+
+        function Subscribe() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                alert(`Thank you for subscribing with ${email}`);
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
