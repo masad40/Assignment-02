@@ -41,11 +41,9 @@
     max-width: 1140px;
     margin: 0px auto;
 }
-
-/* .mx-w-j {
-    max-width: 1440px;
-    margin: 0px;
-} */
+body {
+    overflow-x: hidden;
+}
 
 .text-center {
     text-align: center;
@@ -118,8 +116,6 @@ section {
 }
 
 .colorfull {
-    /* font-size: 4rem;
-    font-weight: bold; */
     color: #E95A08;
 }
 
@@ -153,7 +149,7 @@ section {
 
 /* card style */
 .card {
-    width: 270px;
+    width: 100%;
     height: 485px;
     flex-direction: column;
 
@@ -170,10 +166,15 @@ section {
     font-weight: bold;
     color: #111111;
 }
+.card img {
+    width: 100%;
+    height: 322px;
+    object-fit: cover;
+}
 
 .card-btn {
     height: 50px;
-    width: 270px;
+    width: 100%;
     border: none;
     font-size: 1rem;
     font-weight: 600;
@@ -197,12 +198,14 @@ section {
 
 .lover-img-container {
     position: relative;
-    width: fit-content;
+    max-width: 100%;
+    
 }
 
 .lover-banner {
     height: 597px;
-    width: 540px;
+    max-width: 540px;
+    object-fit: cover;
 }
 
 .lover-logo {
@@ -213,6 +216,7 @@ section {
     right: -100px;
     animation: spin 20s linear infinite;
 }
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -268,8 +272,6 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
-    /* height: 206px;
-    width: 366px; */
 }
 
 .discount-sixty::before {
@@ -401,6 +403,9 @@ section {
 }
 
 /* join section styles */
+.join-section {
+    width: 100%;
+}
 .join {
     width: 100vw;
     max-width: 100vw;
@@ -513,63 +518,23 @@ footer {
     font-size: 1rem;
 }
 
-/* discount section responsive */
-/* .discount {
-    height: 423.12px;
-    display: grid;
-    grid-template-areas:
-        "a c c"
-        "b c c";
-    gap: 25px;
-    margin-top: 120px;
-}
 
-.discount-sixty,
-.discount-thirty,
-.discount-five {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-.discount-sixty p,
-.discount-thirty p,
-.discount-five p {
-    margin-top: 0;
-} */
-
-/* Responsive styles */
-/* @media screen and (max-width: 1024px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .plant {
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-    .plant {
-        margin-left: 0;
-    }
-} */
+/* responsive style */
 
 @media screen and (max-width:576px) {
     .navbar {
-        margin-left: 0;
-        margin-bottom: 250px; /* nav er por 30px gap */
+        margin: 0px;
+        margin-bottom: 250px; 
+        width: 100%;
     }
 
     .home,
     .shop {
         display: none;
     }
+    /* .nav-lists {
+        gap: 0px;
+    } */
 
     .fresh {
         flex-direction: column-reverse;
@@ -581,15 +546,24 @@ footer {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
+        padding: 10px;
     }
-
-    .plant {
-        margin-left: 0;
+    .card img {
+        height: 250px;
+        object-fit: cover;
+    }
+    .card {
+        height: 400px;
     }
 
     .lover {
         flex-direction: column;
         gap: 30px;
+        padding: 10px;
+    }
+    .lover-banner {
+        width: 100%;
+        height: 500px;
     }
 
     .lover-logo {
@@ -605,6 +579,7 @@ footer {
         height: auto;
         gap: 16px;
         margin-top: 60px;
+        padding: 10px;
     }
 
     .discount-sixty,
@@ -625,7 +600,6 @@ footer {
         box-sizing: border-box;
         background-size: cover;
         background-position: center;
-        border-radius: 0;
         height: 320px;
         margin-top: 50px;
     }
@@ -644,8 +618,8 @@ footer {
     .join-btn {
         width: 90vw;
         max-width: 320px;
-        margin: 0 auto;      /* Center horizontally */
-        display: block;      /* Ensure block level */
+        margin: 0 auto;      
+        display: block;      
         border-radius: 6px;
     }
     .join-btn {
